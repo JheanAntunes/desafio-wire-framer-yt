@@ -1,0 +1,101 @@
+@import url("./assets/font.css");
+@import url("./assets/reset.css");
+@import url("./assets/variavel.css");
+
+body {
+  background-color: var(--yt-live-chat-background-color);
+  color: var(--yt-live-chat-primary-text-color);
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+header {
+  height: 56px;
+  padding: 0 16px;
+  display: flexbox;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .start {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+header > .center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header > .center > input[type="search"] {
+  background-color: var(--yt-emoji-picker-search-background-color);
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 400px;
+}
+
+header > .center > input[type="search"]::placeholder {
+  color: var(--yt-emoji-picker-search-placeholder-color);
+}
+
+header > .end {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#columns {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: center;
+  margin: 10px auto 0 auto;
+  gap: 10px;
+}
+
+#columns > #primary {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#columns > #primary > div {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#columns > #secondary {
+  flex: 1;
+}
+
+#columns > #secondary > .aside-iframer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#columns > #secondary > .aside-iframer > .set-video {
+  display: flex;
+  gap: 8px;
+}
+
+#columns > #secondary > .aside-iframer > .set-video > .video {
+  min-width: 120px;
+  min-height: 100px;
+  background-color: red;
+  border-radius: 10px;
+}
